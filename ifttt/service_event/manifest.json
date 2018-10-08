@@ -1,0 +1,76 @@
+{
+	"name": "IFTTT",
+	"sdk_version": "1",
+	"identifier": "com.ubersmith.ifttt.service",
+	"namespace": "DemoPlugin\\Ifttt",
+	"description": "IFTTT Plugin",
+	"version": "1.0",
+	"modules": {
+		"ifttt_service_module": {
+			"component": "service_plans",
+			"label": "IFTTT Event",
+			"description": "IFTTT Event"
+		}
+	},
+	"config_items": {
+		"ifttt_maker_key" : {
+			"scope" : [
+				"module"
+			],
+			"modules" : [
+				"ifttt_service_module"
+			],
+			"label"      : "Maker Channel Key",
+			"type"       : "text",
+			"size"       : 32,
+			"default"    : "",
+			"class"      : "input_required"
+		},
+		"ifttt_maker_event" : {
+			"scope" : [
+				"module"
+			],
+			"modules" : [
+				"ifttt_service_module"
+			],
+			"label"      : "Maker Event Name",
+			"type"       : "text",
+			"size"       : 32,
+			"default"    : "",
+			"class": "input_required"
+		},
+		"value1" : {
+			"scope" : [
+				"entity"
+			],
+			"modules" : [
+				"ifttt_service_module"
+			],
+			"label"       : "Value 1",
+			"type"        : "select",
+			"options"    : {"": ""}
+		},
+		"value2": {
+			"scope": [
+				"entity"
+			],
+			"modules": [
+				"ifttt_service_module"
+			],
+			"label": "Value 2",
+			"type": "select",
+			"options": {"": ""}
+		},
+		"value3": {
+			"scope": [
+				"entity"
+			],
+			"modules": [
+				"ifttt_service_module"
+			],
+			"label": "Value 3",
+			"type": "select",
+			"options": {"": ""}
+		}
+	}
+}
