@@ -1,1 +1,1 @@
-IFTTT Service Plugin
+IFTTT Ubersmith Plugin Example
